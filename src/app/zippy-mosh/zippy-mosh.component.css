@@ -1,0 +1,23 @@
+
+.zippy-mosh{
+    border: 1px solid #cccccc;
+    border-radius: 2 px;
+}
+
+.zippy-mosh-heading{
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.zippy-mosh-body{
+    padding: 20px;
+}
+
+.expanded{
+    background: #f0f0f0;
+}
+
+.glyphicon{
+    float: right;
+}

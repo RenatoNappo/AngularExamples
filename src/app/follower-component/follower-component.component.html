@@ -1,0 +1,14 @@
+
+
+<div class="form-group">
+  <div><h2>My Followers</h2></div>
+  <div class="media" *ngFor="let follower of followers">
+    <div id="avatardiv">
+    <img id="avatar" class="d-flex mr-3" src="{{ follower.avatar_url }}" alt="Generic placeholder image">
+    </div>
+    <div class="media-body">
+      <h4 class="mt-0">{{ follower.login }}</h4>
+      <a href="follower.html_url">{{ follower.html_url }}</a>
+    </div>
+  </div>
+</div>

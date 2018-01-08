@@ -1,0 +1,23 @@
+
+<br>
+<div class="zippy-mosh">
+  <div class="zippy-mosh-heading"
+      [class.expanded]="isExpanded"
+      (click)="toggleExpansion()"
+  >
+  <span class="glyphicon"
+        [class.glyphicon-chevron-up]="isExpanded"
+        [class.glyphicon-chevron-down]="!isExpanded"
+  >
+  </span>
+    {{ title }}
+  </div>
+  <div class="zippy-mosh-body"
+    *ngIf="isExpanded"  
+  >
+    <ng-content select=".zippy-mosh-content"></ng-content>
+  </div>
+</div>
+
+
+

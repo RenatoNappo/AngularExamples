@@ -1,0 +1,18 @@
+
+
+.isButtonActive{
+    background-Color: blue;
+    color: white;
+    font-Weight: bold;
+}
+
+
+.isButtonInavtive{
+    background-Color: gray;
+    color: black;
+    font-Weight: bold;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title PanelHeader">
+          {{ title }}
+        </h4>
+        <div  
+          class="glyphicon PanelHeader pull-right" 
+          [class.glyphicon-chevron-up]="isShown"
+          [class.glyphicon-chevron-down]="!isShown"
+          (click)="showDetails()">
+        </div>
+      </div>
+      <div id="zippy1" 
+        class="panel-collapse" 
+        [class.collapse]="!isShown">
+        <div class="panel-body">
+          <ng-content select=".content"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+

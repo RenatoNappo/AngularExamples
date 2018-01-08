@@ -1,0 +1,28 @@
+<!--br>
+<br>
+<ul>
+ <li *ngFor="let course of courses; even as isEven">
+   {{ i }} - {{ course.id}} - {{ course.name }} <span *ngIf="isEven">(Even)</span>
+ </li>
+</ul-->
+
+<br>
+<button (click)="AddCourse()">Add New Course</button>
+<br>
+<br>
+<table>
+ <tr>
+   <td width="100">Course ID</td>
+   <td width="100">Course Name</td>
+   <td width="100"></td>
+ </tr>
+ </table>
+ <table *ngFor="let course of courses; even as isEven">
+ <tr [class.highlighted]="!isEven">
+   <td width="100">{{ course.id }}</td>
+   <td width="100">{{ course.name }}</td>
+   <td><button (click)="RemoveCourse(course)">Remove Course</button></td>
+ </tr>
+</table>
+
+
