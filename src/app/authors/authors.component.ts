@@ -17,6 +17,7 @@ export class AuthorsComponent implements OnInit {
   }
 
   ngOnInit() {
+    
   }
 
 }
